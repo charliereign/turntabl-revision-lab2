@@ -27,7 +27,14 @@ class RegisterTest {
 
         List<String> expected = List.of("Sam", "George", "Ama", "Jane");
 
+        List<String> expectedName = List.of("Ama");
+
         //then
-        assertEquals(expected,new Register(nameable).getRegister());
+        //assertEquals(expected,new Register(nameable).getRegister());
+
+        //testing the getRegisterByLevel method
+        assertEquals(expectedName,new Register(nameable).getRegisterByLevel(Level.THREE));
     }
+
+
 }
