@@ -16,10 +16,10 @@ class RegisterTest {
 
         //when
         List<Nameable> nameable = List.of(
-                new Student("Sam",samGrade, HasLevel.Level.TWO),
-                new Student("George",georgeGrade, HasLevel.Level.ONE),
-                new Student("Ama",amaGrade, HasLevel.Level.THREE),
-                new Student("Jane",janeGrade, HasLevel.Level.ONE)
+                new Student("Sam",samGrade, Level.TWO),
+                new Student("George",georgeGrade, Level.ONE),
+                new Student("Ama",amaGrade, Level.THREE),
+                new Student("Jane",janeGrade, Level.ONE)
         );
 
 //        Register register = new Register(nameable);

@@ -21,4 +21,8 @@ public class Register {
                 .map(Nameable::getName)
                 .toList();
     }
+
+//    public List<String> getRegisterByLevel(HasLevel.Level level){
+//        nameable.stream().forEach();
+//    }
 }

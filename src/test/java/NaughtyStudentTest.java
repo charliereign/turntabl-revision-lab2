@@ -12,8 +12,8 @@ class NaughtyStudentTest {
         List<Double> studentGrade = List.of(1.0,2.0,3.0,4.0,5.0);
 
         //when
-        NaughtyStudent naughtyStudent = new NaughtyStudent("Jane",studentGrade, HasLevel.Level.ONE);
-        Student student = new Student("Kwame",studentGrade, HasLevel.Level.TWO);
+        NaughtyStudent naughtyStudent = new NaughtyStudent("Jane",studentGrade, Level.ONE);
+        Student student = new Student("Kwame",studentGrade,Level.TWO);
 
         //then
         assertTrue(naughtyStudent instanceof Student);

@@ -22,9 +22,9 @@ class LectureTest {
         student3.add(40.0);
 
         //when
-        lecture.enter(new Student("Ama",student1, HasLevel.Level.THREE));
-        lecture.enter(new Student("Kofi",student2, HasLevel.Level.TWO));
-        lecture.enter(new Student("Adjei",student3, HasLevel.Level.ONE));
+        lecture.enter(new Student("Ama",student1, Level.THREE));
+        lecture.enter(new Student("Kofi",student2, Level.TWO));
+        lecture.enter(new Student("Adjei",student3, Level.ONE));
 
 
         //then
@@ -38,9 +38,9 @@ class LectureTest {
         //given
         List<Double>studentGrade = List.of(1.0,2.0,3.0,4.0,5.0);
         Lecture lecture = new Lecture();
-        NaughtyStudent naughtyStudent = new NaughtyStudent("Lily",studentGrade, HasLevel.Level.THREE);
+        NaughtyStudent naughtyStudent = new NaughtyStudent("Lily",studentGrade, Level.THREE);
 
-        Student student = new Student("Yaw",studentGrade, HasLevel.Level.ONE);
+        Student student = new Student("Yaw",studentGrade, Level.ONE);
         lecture.enter(naughtyStudent);
 
         //when

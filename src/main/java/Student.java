@@ -3,9 +3,9 @@ import java.util.List;
 public class Student implements Nameable, HasLevel {
     private final List<Double> grades;
     private String name;
-    private HasLevel.Level level;
+    private Level level;
 
-    public Student(String name, List<Double> grades, HasLevel.Level level) {
+    public Student(String name, List<Double> grades, Level level) {
         this.grades = grades;
         this.name = name;
         this.level = level;

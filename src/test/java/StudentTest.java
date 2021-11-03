@@ -14,7 +14,7 @@ class StudentTest {
        Double expected = studentGrade.stream().reduce(0.0,Double::sum)/studentGrade.size();
 
        //when
-       Double average = new Student("Kwame",studentGrade, HasLevel.Level.THREE).getAverageGrade();
+       Double average = new Student("Kwame",studentGrade, Level.THREE).getAverageGrade();
 
        //then
        assertEquals(expected,average);
