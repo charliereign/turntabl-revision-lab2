@@ -22,8 +22,8 @@ class RegisterTest {
                 new Student("Jane",janeGrade, Level.ONE)
         );
 
-//        Register register = new Register(nameable);
-//        System.out.println(register.getRegister());
+        Register register = new Register(nameable);
+        System.out.println(register.printReport());
 
         List<String> expected = List.of("Sam", "George", "Ama", "Jane");
 

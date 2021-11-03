@@ -29,7 +29,8 @@ public class Register {
                 .map(Nameable::getName).toList();
     }
 
-
-
+    public String printReport(){
+        return nameable.stream().collect(Collectors.groupingBy(Nameable::getLevel)).toString();
+    }
 
 }
