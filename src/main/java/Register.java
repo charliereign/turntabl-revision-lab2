@@ -3,6 +3,7 @@ import java.util.stream.Collectors;
 
 public class Register {
     private List<Nameable>nameable;
+    private List<HasLevel> studLevel;
 
     public Register(List<Nameable> nameable) {
         this.nameable = nameable;
@@ -22,7 +23,13 @@ public class Register {
                 .toList();
     }
 
-//    public List<String> getRegisterByLevel(HasLevel.Level level){
-//        nameable.stream().forEach();
-//    }
+    public List<String> getRegisterByLevel(Level level) {
+        return nameable.stream()
+                .filter(e->e.getLevel().equals(level))
+                .map(Nameable::getName).toList();
+    }
+
+
+
+
 }
